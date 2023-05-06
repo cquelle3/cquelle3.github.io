@@ -1,0 +1,540 @@
+//QUICKSAND FONT
+$page-font: 'Quicksand', sans-serif;
+$title-font-size: clamp(1.7rem, 2vw, 4rem);
+$paragraph-font-size: clamp(1rem, 1.2vw, 3rem);
+$skills-font-size: clamp(1rem, 1.2vw, 3rem);
+$job-card-title-font-size: clamp(1.1rem, 1.3vw, 4rem);
+$job-card-subtitle-font-size: clamp(0.8rem, 0.85vw, 2.5rem);
+$job-card-bullet-font-size: clamp(0.8rem, 0.85vw, 2.5rem);
+$project-name-font-size: clamp(0.8rem, 0.9vw, 1.3rem);
+$job-card-bullet-lineheight: 1.1;
+$about-paragraph-lineheight: 1.5;
+$button-font-size: 12px;
+$contact-button-font-size: 17px;
+
+//COLOR PALETTE
+$dark-color: #212A3E;
+$midtone-color: #394867;
+$light-color: #9BA4B5;
+$bright-color: #F1F6F9;
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+header{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.divider-line{
+    width: 40%;
+    height: 2px;
+    color: rgb(25, 98, 128);
+    background-color: rgb(25, 98, 128);
+    border-width: 0;
+}
+
+/****SECTION ONE****/
+.intro-name{
+    font-family: $page-font;
+    font-weight: 300;
+    font-size: $title-font-size;
+    color: $bright-color;
+    padding-bottom: 6vh;
+    user-select: none;
+
+    animation: 2s ease-in fadeIn;
+}
+
+.intro-para{
+    font-family: $page-font;
+    font-weight: 300;
+    font-size: $paragraph-font-size;
+    color: $bright-color;
+    text-align: center;
+    padding-top: 9vh;
+    user-select: none;
+
+    animation: 6s ease-in fadeIn;
+}
+
+.block-one{
+    height: clamp(20rem, 100vh, 200rem);
+    background: $dark-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+}
+
+.header-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact, .resume{
+    font-family: $page-font;
+    font-size: $button-font-size;
+    width: 6.6rem !important;
+    height: 2.6rem !important;
+    border: none;
+    border-style: solid;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+
+.contact:active {
+    background: $midtone-color;
+}
+
+.resume:active{
+    background: $light-color;
+}
+
+.contact{
+    background-color: $bright-color;
+    border-color: $light-color;
+}
+
+.resume{
+    background-color: $midtone-color;
+    border-color: $dark-color;
+    color: $bright-color
+}
+
+.resume-button{
+    padding-right: 10px;
+}
+
+.contact-button{
+    padding-right: 10px;
+}
+
+.profile-image{
+    width: clamp(12rem, 20%, 30rem);
+    height: clamp(12rem, 20%, 30rem);
+    border-radius: 50%;
+    user-select: none;
+
+    animation: 4s ease-in fadeIn;
+}
+
+.profile-image:hover{
+    background: $bright-color;
+    box-shadow: 0 0 3rem $bright-color;
+    transition: 0.5s ease-out;
+}
+
+.profile-image:not(:hover){
+    background: none;
+    box-shadow: none;
+    transition: 0.5s ease-in;
+}
+
+.profile-image-block{
+    padding-top: 20px;
+}
+
+/****SECTION TWO****/
+.block-two{
+    height: auto;
+    background-color: $bright-color;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.about-section-row{
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-container{
+    width: 50%;
+}
+
+.about-title{
+    padding-bottom: 1rem;
+    font-family: $page-font;
+    font-weight: 400;
+    font-size: $title-font-size;
+    color: $midtone-color;
+    user-select: none;
+}
+
+.about-para{
+    font-family: $page-font;
+    font-weight: 300;
+    font-size: $paragraph-font-size;
+    line-height: $about-paragraph-lineheight;
+    color: $midtone-color;
+    user-select: none;
+}
+
+.position-link{
+    color: $midtone-color;
+}
+
+.skills-container{
+    width: 40%;
+}
+
+.skills-box{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: clamp(11.5rem, 100%, 50rem);
+    height: auto;
+    border-color: $midtone-color;
+    border-style: solid;
+    box-shadow: 15px 15px 0rem $midtone-color;
+    border-radius: 2rem;
+}
+
+.skills-list{
+    display: flex;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.skills-title{
+    padding-bottom: 1rem;
+    font-family: $page-font;
+    font-weight: 400;
+    font-size: $title-font-size;
+    color: $midtone-color;
+    user-select: none;
+}
+
+.skill-text{
+    font-family: $page-font;
+    font-size: $skills-font-size;
+    padding: 1.26rem;
+    user-select: none;
+    color: $midtone-color;
+}
+
+.skill-text:hover{
+    transform: translate(-5%, -5%);
+    transition: 0.2s ease-out;
+}
+
+.skill-text:not(:hover){
+    transition: 0.2s ease-in;
+}
+
+/****SECTION THREE***/
+.block-three{
+    height: auto;
+    background-color: $bright-color;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.where-worked-title{
+    font-family: $page-font;
+    font-weight: 400;
+    font-size: $title-font-size;
+    color: $midtone-color;
+    user-select: none;
+}
+
+.where-worked-container{
+    width: 60vw;
+}
+
+.job-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.job{
+    padding-bottom: 5rem;    
+}
+
+.job-card{
+    padding: 30px;
+    width: clamp(13rem, 14vw, 30rem);
+    height: clamp(30rem, 36vh, 34rem);
+    border-style: solid;
+    border-color: $midtone-color;
+    box-shadow: 15px 15px 0rem $midtone-color;
+    border-radius: 1rem;
+}
+
+.job-card-title{
+    padding-top: 1rem;
+    font-family: $page-font;
+    font-size: $job-card-title-font-size;
+    color: $midtone-color;
+    user-select: none;
+}
+
+.job-card-subtitle{
+    font-family: $page-font;
+    font-size: $job-card-subtitle-font-size;
+    color: $midtone-color;
+    user-select: none;
+}
+
+.job-bullets{
+    padding-top: 15px;
+}
+
+.job-bullet{
+    font-family: $page-font;
+    font-size: $job-card-bullet-font-size;
+    line-height: $job-card-bullet-lineheight;
+    color: $midtone-color;
+    user-select: none;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    padding-top: 7rem;
+    padding-bottom: 15rem;
+}
+
+.projects-title{
+    font-family: $page-font;
+    font-weight: 400;
+    font-size: $title-font-size;
+    color: $midtone-color;
+    user-select: none;
+}
+
+.project-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.project-card{
+    width: clamp(13rem, 12vw, 30rem);
+    height: clamp(12rem, 20vh, 30rem);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 1rem;
+
+    box-shadow: 15px 15px 0rem $midtone-color;
+    cursor: pointer;
+}
+
+.project-card-tint{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($dark-color, $alpha: 0.5);
+    opacity: 0;
+
+    border-radius: 1rem;
+}
+
+.project-name{
+    font-family: $page-font;
+    font-size: $project-name-font-size;
+    font-weight: 400;
+    color: $bright-color;
+    user-select: none;
+}
+
+.project-card-tint:hover{
+    transition: 0.2s ease-in;
+    opacity: 1;
+}
+
+.project-card-tint:not(:hover){
+    transition: 0.2s ease-out;
+}
+
+/****SECTION THREE***/
+.block-four{
+    height: auto;
+    background: $midtone-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-title{
+    padding-bottom: 1rem;
+    font-family: $page-font;
+    font-weight: 400;
+    font-size: $title-font-size;
+    color: $bright-color;
+    user-select: none;
+}
+
+.contact-para{
+    font-family: $page-font;
+    font-weight: 300;
+    font-size: $paragraph-font-size;
+    line-height: 1;
+    color: $light-color;
+    user-select: none;
+}
+
+.final-contact-button-container{
+    padding-top: 50px;
+}
+
+.final-contact-button{
+    width: 8rem;
+    height: 3.5rem;
+    background-color: $bright-color;
+    color: $dark-color;
+    font-family: $page-font;
+    font-weight: 300;
+    border-style: solid;
+    border-radius: 0px;
+    border-width: 5px;
+    border-color: $light-color;
+    font-size: $button-font-size;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+.final-contact-button:active{
+    background: $midtone-color;
+}
+
+.links-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+}
+
+.linkedin-button, .github-button{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: $bright-color;
+    border-color: $light-color;
+    border-style: solid;
+    border-width: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.linkedin-button-container{
+    padding-right: 10px;
+}
+
+.linkedin-button:active{
+    background-color: $midtone-color;
+}
+
+.github-button:active{
+    background-color: $midtone-color;
+}
+
+//MEDIA CHANGES FOR RESPONSIVE DESIGN
+@media only screen and (max-width: 1700px){
+
+    .about-section-row{
+        flex-direction: column;
+    }
+    .about-container{
+        width: 100%;
+    }
+    .skills-container{
+        padding-top: 5rem;
+        width: 80%;
+    }
+    .skill-text{
+        padding: 0.7rem;
+    }
+
+}
+
+@media only screen and (max-width: 1000px){
+    .skill-text{
+        padding: 0.5rem;
+    }
+
+    .skills-container{
+        width: 100%;
+    }
+
+    .resume, .contact{
+        width: 70px !important;
+        height: 35px !important;
+    }
+
+    .job-card{
+        padding: 15px;
+        height: clamp(24rem, 36vh, 34rem);
+    }
+
+    .contact-para{
+        text-align: center;
+    }
+
+    .about-section-row{
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .projects-container{
+        padding-bottom: 10rem;
+        padding-top: 0rem;
+    }
+
+}
