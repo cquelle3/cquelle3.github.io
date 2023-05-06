@@ -71,7 +71,7 @@ export class MainPageComponent implements OnInit{
     {
       projectUrl: 'https://github.com/cquelle3/React-Django-TodoList',
       projectName: 'React-Django Todo List',
-      projectImage: "url('../../assets/TodoList.png')"
+      projectImage: "url('./assets/TodoList.png')"
     }
   ];
 
@@ -84,7 +84,7 @@ export class MainPageComponent implements OnInit{
   }
 
   openResume(){
-    window.open('../../assets/ColinQuelleResume.pdf')
+    window.open('./assets/ColinQuelleResume.pdf')
   }
 
   scrollToTarget(ele: HTMLElement){
