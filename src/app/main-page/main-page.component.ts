@@ -72,6 +72,11 @@ export class MainPageComponent implements OnInit{
       projectUrl: 'https://github.com/cquelle3/React-Django-TodoList',
       projectName: 'React-Django Todo List',
       projectImage: "url('./assets/TodoList.png')"
+    },
+    {
+      projectUrl: 'http://cquelle3.github.io/recipe-app',
+      projectName: 'Recipe Search App',
+      projectImage: "url('./assets/RecipeSearchApp.png')"
     }
   ];
 

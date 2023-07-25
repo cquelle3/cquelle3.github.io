@@ -55,7 +55,7 @@
             <h1 class="where-worked-title" data-aos="fade-right" data-aos-duration="2000">Where I've Worked</h1>
             <div class="job-container">
                 <ng-container *ngFor="let job of jobList">
-                    <div class="job" data-aos="flip-right" data-aos-duration="2000">
+                    <div class="job" data-aos="flip-right" data-aos-duration="2000"> 
                         <div class="job-card">
                             <h1 class="job-card-title">{{job.jobTitle}}</h1>
                             <p class="job-card-subtitle">{{job.jobSubtitle}}</p>
@@ -73,9 +73,11 @@
             <h1 class="projects-title" data-aos="fade-right" data-aos-duration="2000">Side Projects</h1>
             <div class="project-card-container">
                 <ng-container *ngFor="let project of projectList">
-                    <div class="project-card" [style.background-image]="project.projectImage" data-aos="flip-right" data-aos-duration="2000">
-                        <div class="project-card-tint" (click)="navigateToUrl(project.projectUrl)">
-                            <p class="project-name">{{project.projectName}}</p>
+                    <div class="project" data-aos="flip-right" data-aos-duration="2000">
+                        <div class="project-card" [style.background-image]="project.projectImage">
+                            <div class="project-card-tint" (click)="navigateToUrl(project.projectUrl)">
+                                <p class="project-name">{{project.projectName}}</p>
+                            </div>
                         </div>
                     </div>
                 </ng-container>
