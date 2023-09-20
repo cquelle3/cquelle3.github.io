@@ -30,6 +30,7 @@ export class MainPageComponent implements OnInit{
     'Tailwind',
     'NodeJS',
     'LoopbackJS',
+    'MongoDB',
     'Python',
     'Flask',
     'C/C++',
