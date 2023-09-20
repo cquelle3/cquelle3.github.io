@@ -26,6 +26,8 @@ export class MainPageComponent implements OnInit{
     'Javascript',
     'Typescript',
     'Angular',
+    'React',
+    'Tailwind',
     'NodeJS',
     'LoopbackJS',
     'Python',
@@ -77,6 +79,11 @@ export class MainPageComponent implements OnInit{
       projectUrl: 'http://cquelle3.github.io/recipe-app',
       projectName: 'Recipe Search App',
       projectImage: "url('./assets/RecipeSearchApp.png')"
+    },
+    {
+      projectUrl: 'https://dev-chat-vmi7.onrender.com',
+      projectName: 'Dev-Chat (Discord Clone)',
+      projectImage: "url('./assets/DevChat.png')"
     }
   ];
 
