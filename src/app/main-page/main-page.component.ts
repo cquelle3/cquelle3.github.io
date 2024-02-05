@@ -85,6 +85,11 @@ export class MainPageComponent implements OnInit{
       projectUrl: 'https://dev-chat-vmi7.onrender.com',
       projectName: 'Dev-Chat (Discord Clone)',
       projectImage: "url('./assets/DevChat.png')"
+    },
+    {
+      projectUrl: 'https://board-app-risw.onrender.com',
+      projectName: 'Task Board App',
+      projectImage: "url('./assets/BoardApp.png')"
     }
   ];
 
