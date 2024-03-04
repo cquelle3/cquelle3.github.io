@@ -90,6 +90,11 @@ export class MainPageComponent implements OnInit{
       projectUrl: 'https://board-app-risw.onrender.com',
       projectName: 'Task Board App',
       projectImage: "url('./assets/BoardApp.png')"
+    },
+    {
+      projectUrl: 'https://cquelle3.github.io/webgl-model-loader',
+      projectName: 'WebGL Model Loader',
+      projectImage: "url('./assets/WebGLModelLoader.png')"
     }
   ];
 
