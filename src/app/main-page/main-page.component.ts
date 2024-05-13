@@ -95,6 +95,11 @@ export class MainPageComponent implements OnInit{
       projectUrl: 'https://cquelle3.github.io/webgl-model-loader',
       projectName: 'WebGL Model Loader',
       projectImage: "url('./assets/WebGLModelLoader.png')"
+    },
+    {
+      projectUrl: 'https://github.com/cquelle3/tetris-clone-pygame',
+      projectName: 'Tetris Python Clone',
+      projectImage: "url('./assets/Tetris.png')"
     }
   ];
 
