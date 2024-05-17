@@ -33,6 +33,7 @@ export class MainPageComponent implements OnInit{
     'MongoDB',
     'Python',
     'Flask',
+    'SQL',
     'C/C++',
     'Java',
     'C#',
